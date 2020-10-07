@@ -25,63 +25,43 @@ struct Info: View {
                         Text("Navn:").bold()
                         Text("Carbondive 300")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Produkttype:").bold()
                         Text("Dykkerflaske")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Producent:").bold()
                         Text("Worthington Industries")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Adresse:").bold()
                         Text("Penselstrøget 30, 4000 Roskilde")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Ejer:").bold()
                         Text("Anders Nielsen")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("QR-ID:").bold()
                         Text("A124578")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Dato for næste syn:").bold()
                         Text("11/9-2020")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Dato for installation:").bold()
                         Text("11/9-2018")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Dato for registrering:").bold()
                         Text("11/9-2018")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 0, idealHeight: 10, maxHeight: 70, alignment: .leading)
-                    
                     VStack(alignment: .leading){
                         Text("Frekvens for eftersyn:").bold()
                         Text("24 måneder")
                     }
-//                    .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 0, idealHeight: 10, maxHeight: 70, alignment: .leading)
                 }
-//                .position(x: 190, y: 350)
                 .navigationBarTitle("Info", displayMode: .inline)
                 .frame(minWidth: 300, idealWidth: 400, maxWidth: 400, alignment: .leading)
                 

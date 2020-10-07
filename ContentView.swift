@@ -31,6 +31,10 @@ struct ContentView: View {
     //    @ObservedObject var user = User()
     @State var address: String = ""
     
+    init() {
+        
+    }
+    
     var body: some View {
 //        NavigationView {
             VStack(){
@@ -49,7 +53,7 @@ struct ContentView: View {
 //                    Text ("Søg")
 //                        .multilineTextAlignment(.leading)
 //                }
-                
+         
                 TabView{
                     AddressSearch()
                         .tabItem {
@@ -76,14 +80,20 @@ struct ContentView: View {
                             Image(systemName: "list.bullet")
                             Text("Opgaver")
                         }
+                    
                 }
-                
+
+//                .background(RadialGradient(gradient: Gradient(colors: [Color.red.opacity(0.4), Color.blue.opacity(1)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: /*@START_MENU_TOKEN@*/500/*@END_MENU_TOKEN@*/))
+                .onAppear() {UITabBar.appearance().barTintColor = .some(UIColor(red:58/255, green: 91/255, blue: 120/255, alpha: 1.00))
+                    UITabBar.appearance().tintColor = .white
+                    UITabBar.appearance().unselectedItemTintColor = .white
 //                .navigationBarTitle("Address Search", displayMode: .inline)
                 //            .background(Color.pink)
                 //            }
                 //            .environmentObject(user)
             }
         }
+    }
     
     
     

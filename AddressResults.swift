@@ -1,69 +1,158 @@
 //
-//  AddressResults.swift
+//  AnlaegsportalView.swift
 //  Anlaegsportal-iOS
 //
-//  Created by Jonas Rasmussen on 01/10/2020.
+//  Created by Jonas Rasmussen on 05/10/2020.
 //  Copyright © 2020 Jonas Rasmussen. All rights reserved.
 //
 
 import SwiftUI
 
 struct AddressResults: View {
-    @Binding var address: String
-    
-    
-    
     var body: some View {
         VStack{
-            HStack{
-                Spacer()
+            NavigationLink(destination: SlidingTabMenuView()) {
                 VStack(alignment: .leading){
                     
-                    if (self.address == "")
-                    {
-                        Text("Adresse: \nPenselstrøget 30, 4000 Roskilde")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(.white)
-                            .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 200, idealHeight: 200, maxHeight: 200, alignment: .leading)
+                    HStack{
+                        Image("Dykkerflaske")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40, height: 60, alignment: .leading)
+                        VStack(alignment: .leading){
+                            HStack{
+                                
+                                Text("Navn:")
+                                    .bold()
+                                Text("Carbondive 300")
+                            }
+                            HStack{
+                                Text("Ansvarlig:")
+                                    .bold()
+                                Text("B-Tech")
+                            }
+                            HStack{
+                                Text("Dato for næste syn:")
+                                    .bold()
+                                Text("11/9-2020")
+                            }
+                        }
                     }
-                    else{
-                    Text("Adresse: \n\(address)")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(.white)
-                        .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 200, idealHeight: 200, maxHeight: 200, alignment: .leading)
                 }
-                }
-                
-                Spacer()
-                    .multilineTextAlignment(.leading)
             }
+            .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
+            .border(Color.gray, width: 1)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.black.opacity(0.7)]), startPoint: .leading, endPoint: .trailing))
+//            .background(Color.black.opacity(0.05))
+
             
-            .background(Color.black.opacity(0.3).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
-            AnlaegsportalView()
+            NavigationLink(destination: SlidingTabMenuView()) {
+                
+                HStack{
+                    Image("Dykkerflaske")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 60, alignment: .leading)
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text("Navn:")
+                                .bold()
+                            Text("Carbondive 300")
+                        }
+                        HStack{
+                            Text("Ansvarlig:")
+                                .bold()
+                            Text("B-Tech")
+                        }
+                        HStack{
+                            Text("Dato for næste syn:")
+                                .bold()
+                            Text("11/9-2020")
+                            
+                        }
+                    }
+                }
+            }
+            .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
+            .border(Color.gray, width: 1)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.black.opacity(0.7)]), startPoint: .leading, endPoint: .trailing))
+//            .background(Color.black.opacity(0.05))
             
+            NavigationLink(destination: SlidingTabMenuView()) {
+                
+                HStack{
+                    Image("Dykkerflaske")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 60, alignment: .leading)
+                    
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text("Navn:")
+                                .bold()
+                            Text("Carbondive 300")
+                        }
+                        HStack{
+                            Text("Ansvarlig:")
+                                .bold()
+                            Text("B-Tech")
+                        }
+                        HStack{
+                            Text("Dato for næste syn:")
+                                .bold()
+                            Text("11/9-2020")
+                        }
+                    }
+                }
+            }
+            .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
+            .border(Color.gray, width: 1)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.black.opacity(0.7)]), startPoint: .leading, endPoint: .trailing))
+//            .background(Color.black.opacity(0.05))
             
-                    .navigationBarTitle("Address Results", displayMode: .inline)
-            
-            
+            NavigationLink(destination: SlidingTabMenuView()) {
+                
+                HStack{
+                    Image("Dykkerflaske")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 60, alignment: .leading)
+                    
+                    VStack(alignment: .leading){
+                        HStack{
+                            Text("Navn:")
+                                .bold()
+                            Text("Carbondive 300")
+                        }
+                        HStack{
+                            Text("Ansvarlig:")
+                                .bold()
+                            Text("B-Tech")
+                        }
+                        HStack{
+                            Text("Dato for næste syn:")
+                                .bold()
+                            Text("11/9-2020")
+                        }
+                    }
+                }
+            }
+            .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 10, maxHeight: 70, alignment: .leading)
+            .border(Color.gray, width: 1)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.black.opacity(0.7)]), startPoint: .leading, endPoint: .trailing))
+//            .background(Color.black.opacity(0.05))
+
         }
+        .foregroundColor(Color.black.opacity(0.8))
+        .position(x: 190, y: 170)
+
     }
 }
-//struct AddressResultsView: View {
-//    @EnvironmentObject var user: User
-//    @EnvironmentObject var address: Address
-//
-//
-////    var body: some View {
-////        VStack {
-////            Text("Address: \(address)")
-//////            Button("Increase") {
-//////                self.user.score += 1
-//////           }
-////                .environmentObject(self.address)
-////        }
-////    }
-////}
 
 
-
-struct AddressResults_Previews: PreviewProvider {
+struct AnlaegsportalView_Previews: PreviewProvider {
     static var previews: some View {
-        AddressResults(address: .constant("adresse eksempel"))
+        AddressResults()
     }
 }
+
