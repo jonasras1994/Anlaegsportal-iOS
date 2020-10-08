@@ -132,6 +132,7 @@ struct Documents: View {
                 Spacer()
             }
         }
+        .foregroundColor(.white)
     }
 }
 

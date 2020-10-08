@@ -27,7 +27,7 @@ import SwiftUI
 //    @Published var address = 0
 //}
 
-struct ContentView: View {
+struct NavigationTabView: View {
     //    @ObservedObject var user = User()
     @State var address: String = ""
     
@@ -75,7 +75,7 @@ struct ContentView: View {
                             Image(systemName: "doc.text")
                             Text("Dokumenter")
                         }
-                    Text("Opgaver")
+                        RESTTest()
                         .tabItem {
                             Image(systemName: "list.bullet")
                             Text("Opgaver")
@@ -99,7 +99,7 @@ struct ContentView: View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            NavigationTabView()
                 .previewDevice("iPhone 11 Pro")
         }
     }

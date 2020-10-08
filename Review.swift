@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Eftersyn: View {
+struct Review: View {
     var body: some View {
         VStack{
             HStack{
@@ -167,11 +167,12 @@ struct Eftersyn: View {
                 Spacer()
             }
         }
+        .foregroundColor(.white)
     }
 }
 
 struct Eftersyn_Previews: PreviewProvider {
     static var previews: some View {
-        Eftersyn()
+        Review()
     }
 }

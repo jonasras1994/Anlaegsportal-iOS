@@ -64,6 +64,7 @@ struct Info: View {
                 }
                 .navigationBarTitle("Info", displayMode: .inline)
                 .frame(minWidth: 300, idealWidth: 400, maxWidth: 400, alignment: .leading)
+                .foregroundColor(.white)
                 
             }
             
