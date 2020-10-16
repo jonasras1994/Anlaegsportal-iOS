@@ -8,26 +8,22 @@
 
 import SwiftUI
 
-struct Address: Hashable, Codable {
-    var bbrId: String
-    var status: Int
-    var darstatus: Int
-    var vejkode: Int
-    var vejnavn: String
-    var adresseringsvejnavn: String
-    var husnr: String
-    var etage: String
-    var dør: String
-    var supplerendebynavn: String
-    var postnr: Int
-    var postnrnavn: String
-    var stormodtagerpostnr: Int
-    var stormodtagerpostnrnavn: String
-    var kommunekode: Int
-    var adgangsadresseid: String
-    var x: Double
-    var y: Double
-    var href: String
-    var tekst: String     
+struct Address: Codable {
+    let tekst: String!
+    let adresse: Adresse!
+}
+
+// MARK: - Adresse
+struct Adresse: Codable {
+    let id: String!
+    let status, darstatus: Int!
+    let vejkode, vejnavn, adresseringsvejnavn, husnr: String!
+    let etage, dør: String!
+    let supplerendebynavn: String!
+    let postnr, postnrnavn: String!
+    let stormodtagerpostnr, stormodtagerpostnrnavn: String!
+    let kommunekode, adgangsadresseid: String!
+    let x, y: Double!
+    let href: String!
 }
 

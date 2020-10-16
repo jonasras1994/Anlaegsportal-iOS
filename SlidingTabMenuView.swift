@@ -17,7 +17,11 @@ import SlidingTabView
 
 struct SlidingTabMenuView : View {
     @State private var selectedTabIndex = 0
+    var installationId: Int
     
+    init(installationId: Int) {
+        self.installationId = installationId
+    }
     
     var body: some View {
         VStack(alignment: .leading){
@@ -50,7 +54,7 @@ struct SlidingTabMenuView : View {
             .padding(.bottom, 10)
             .border(Color.gray.opacity(0.1), width: 1)
             .foregroundColor(.white)
-            .background(Color.black.opacity(0.1))
+            .background(Color.clear)
             .shadow(radius: 50)
             
             VStack(alignment: .leading) {
@@ -60,7 +64,7 @@ struct SlidingTabMenuView : View {
                                activeAccentColor: Color.blue,
                                selectionBarColor: Color.blue)
                 if selectedTabIndex == 0{
-                    Info()
+                    Info(installationId: self.installationId)
                 }
                 else if selectedTabIndex == 1{
                     Review()
@@ -71,7 +75,7 @@ struct SlidingTabMenuView : View {
                 Spacer()
             }
             .animation(.none)
-            .background(RadialGradient(gradient: Gradient(colors: [Color(red: 58/255, green: 91/255, blue: 120/255).opacity(0.6), Color(red: 58/255, green: 91/255, blue: 120/255)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 300))
+           
             .foregroundColor(.white)
         }
         .background(RadialGradient(gradient: Gradient(colors: [Color(red: 58/255, green: 91/255, blue: 120/255).opacity(0.6), Color(red: 58/255, green: 91/255, blue: 120/255)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 300))
@@ -86,6 +90,6 @@ struct SlidingTabMenuView : View {
 
 struct SlidingTabMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SlidingTabMenuView()
+        SlidingTabMenuView(installationId: 1234)
     }
 }
