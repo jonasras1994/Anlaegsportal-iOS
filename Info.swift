@@ -33,7 +33,7 @@ struct Info: View {
                         HStack{
                             
                             HStack{
-                                Text("Navn: \nProdukt type: \nProdukt mærke: \nPris: \nUdløb af garanti: \nAnsvarlig: \nKommentarer: \nRegistreringsdato: \nInstallationsdato: \nSidste eftersyn: \nFrekvens for eftersyn: \nCheckliste: \nAdresse: \nQR-ID:")
+                                Text("Navn: \nProdukt type: \nProdukt mærke: \nPris: \nUdløb af garanti: \nAnsvarlig: \nKommentarer: \nRegistreringsdato: \nInstallationsdato: \nSidste eftersyn: \nEftersynsfrekvens: \nCheckliste: \nAdresse: \nQR-ID:")
                                     .font(.headline)
                                 Text(installation.myconcatenate())
 

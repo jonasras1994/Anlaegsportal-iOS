@@ -26,9 +26,9 @@ struct Installation: Hashable, Codable {
         var responsible : String!
         var reviewFrequency : Int!
         var warrantyDate : String!
-    
-    init() {
-    }
+//    
+//    init() {
+//    }
     
 //    func toString() -> String {
 //        return (model ,productType ,make ,price ,(warrantyDate) ,responsible ,comment ,registrationDate ,installationDate ,lastReview ,reviewFrequency ,checklistId ,address ,qrId)
@@ -37,7 +37,7 @@ struct Installation: Hashable, Codable {
     
     
     func myconcatenate() -> String {
-        var myStrings: [String] = [model,  "\n" ,productType,  "\n" ,make,  "\n", String(price),  "\n" ,(warrantyDate),  "\n" ,responsible,  "\n" ,comment,  "\n" ,registrationDate,  "\n", installationDate,  "\n" ,lastReview,  "\n", String(reviewFrequency),  "\n", String(checklistId),  "\n", address,  "\n", qrId]
+        let myStrings: [String] = [model,  "\n" ,productType,  "\n" ,make,  "\n", String(price),  "\n" ,(warrantyDate),  "\n" ,responsible,  "\n" ,comment,  "\n" ,registrationDate,  "\n", installationDate,  "\n" ,lastReview,  "\n", String(reviewFrequency),  "\n", String(checklistId),  "\n", address,  "\n", qrId]
         var resultString = ""
 //        ForEach(myStrings, id:\.self) {str in resultString += str}
         myStrings.forEach{str in
