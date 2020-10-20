@@ -56,6 +56,9 @@ struct SlidingTabMenuView : View {
             .foregroundColor(.white)
             .background(Color.clear)
             .shadow(radius: 50)
+            .edgesIgnoringSafeArea(.bottom)
+
+            
             
             VStack(alignment: .leading) {
                 SlidingTabView(selection: self.$selectedTabIndex,
@@ -75,10 +78,13 @@ struct SlidingTabMenuView : View {
                 Spacer()
             }
             .animation(.none)
-           
             .foregroundColor(.white)
+            .edgesIgnoringSafeArea(.bottom)
+
         }
         .background(RadialGradient(gradient: Gradient(colors: [Color(red: 58/255, green: 91/255, blue: 120/255).opacity(0.6), Color(red: 58/255, green: 91/255, blue: 120/255)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 300))
+        .edgesIgnoringSafeArea(.bottom)
+
     }
 }
 //@available(iOS 13.0.0, *)

@@ -32,9 +32,6 @@ struct AddressSearch: View {
         UITableViewCell.appearance().backgroundColor = .clear
     }
     
-    
-    //Nikolaj var her #sejtnok #velbekommen #jonasskider
-    
     var body: some View {
         let addressValueBinding = Binding<String>(get: {
             self.address
@@ -116,6 +113,8 @@ struct AddressSearch: View {
             }
             //            .onAppear(perform: loadData)
             .background(RadialGradient(gradient: Gradient(colors: [Color(red: 58/255, green: 91/255, blue: 120/255).opacity(0.6), Color(red: 58/255, green: 91/255, blue: 120/255)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 300))
+            .edgesIgnoringSafeArea(.bottom)
+            
         }
     }
     func loadData() {

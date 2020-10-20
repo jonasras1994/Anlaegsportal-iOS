@@ -28,18 +28,23 @@ struct AddressResultsView: View {
                         .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .leading)
                 }
             }
+
             Spacer()
                 .multilineTextAlignment(.leading)
                 .shadow(radius: 50)
             VStack{
                 Color.white.frame(height: CGFloat(3) / UIScreen.main.scale)
             }
+
             AddressResults()
                 .navigationBarTitle("Address Results", displayMode: .inline)
                 .foregroundColor(.white)
+
             
         }
         .background(RadialGradient(gradient: Gradient(colors: [Color(red: 58/255, green: 91/255, blue: 120/255).opacity(0.6), Color(red: 58/255, green: 91/255, blue: 120/255)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/, endRadius: 300))
+        .edgesIgnoringSafeArea(.bottom)
+
     }
 }
 

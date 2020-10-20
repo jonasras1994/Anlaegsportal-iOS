@@ -46,16 +46,28 @@ struct AddressResults: View {
                             }
                         }
                     }
+                    .edgesIgnoringSafeArea(.bottom)
+
                     VStack{
                         Color.white.frame(height: CGFloat(3) / UIScreen.main.scale)
                     }
+                    .edgesIgnoringSafeArea(.bottom)
+
                 }
                 .listRowBackground(Color.clear)
                 .foregroundColor(.white)
+                .edgesIgnoringSafeArea(.bottom)
+
                 }
+                .edgesIgnoringSafeArea(.bottom)
+
             }
             .onAppear(perform: loadData)
+            .edgesIgnoringSafeArea(.bottom)
+
         }
+        .edgesIgnoringSafeArea(.bottom)
+
     }
     func loadData() {
         let url = URL(string: "https://lekondbrest.azurewebsites.net/api/installations/")!
