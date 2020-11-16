@@ -30,17 +30,17 @@ struct AddressResults: View {
                     NavigationLink(destination: SlidingTabMenuView(installationId: item.installationId)) {
                         VStack(alignment: .leading){
                             HStack{
-                                Text("Navn:")
+                                Text("Name:")
                                     .font(.headline)
                                 Text(item.model)
                             }
                             HStack{
-                                Text("Ansvarlig:")
+                                Text("Responsible:")
                                     .font(.headline)
                                 Text(item.responsible)
                             }
                             HStack{
-                                Text("Dato for næste eftersyn:")
+                                Text("Due date for next review:")
                                     .font(.headline)
                                 Text(item.lastReview)
                             }

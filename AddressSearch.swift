@@ -58,9 +58,10 @@ struct AddressSearch: View {
                         CodeScannerView(codeTypes: [.qr], simulatedData: "A187300", completion: self.handleScan)
                     }
                     
+                    
                     VStack{
-                        Text("Indtast adresse:")
-                        TextField("Adresse...", text: addressValueBinding)
+                        Text("Enter address:")
+                        TextField("Address...", text: addressValueBinding)
                             .multilineTextAlignment(.center)
                             
                             
@@ -100,9 +101,8 @@ struct AddressSearch: View {
                         
                         }
                 }
-                .padding(.top, 50)
-                Spacer()
-                Text("Vælg adresse via kort:")
+                .padding(.top, 100)
+                Text("Select address on map:")
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.white)
                 MapView()

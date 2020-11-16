@@ -18,48 +18,17 @@ struct Review: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
-                            .bold()
-                        Text("B-Tech")
-                    }
-                    HStack{
-                        Text("Dato:")
-                            .bold()
-                        Text("11/9-2020")
-                    }
-                    HStack{
-                        Text("Status:")
-                            .bold()
-                        Text("OK")
-                        Image(systemName: "hand.thumbsup.fill")
-                            .foregroundColor(.green)
-                    }
-                }
-                Spacer()
-            }
-            HStack{
-                Image(systemName: "text.badge.checkmark")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40, height: 60, alignment: .leading)
-                VStack(alignment: .leading){
-                    HStack{
-                        Text("Titel:")
-                            .bold()
-                        Text("Test af tryk")
-                    }
-                    HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("14/9-2018")
                     }
@@ -80,50 +49,19 @@ struct Review: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
-                        Text("Carsten Aps")
+                        Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
-                        Text("3/9-2016")
-                    }
-                    HStack{
-                        Text("Status:")
-                            .bold()
-                        Text("OK")
-                        Image(systemName: "hand.thumbsup.fill")
-                            .foregroundColor(.green)
-                    }
-                }
-                Spacer()
-            }
-            HStack{
-                Image(systemName: "text.badge.checkmark")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40, height: 60, alignment: .leading)
-                VStack(alignment: .leading){
-                    HStack{
-                        Text("Titel:")
-                            .bold()
-                        Text("Test af tryk")
-                    }
-                    HStack{
-                        Text("Ansvarlig:")
-                            .bold()
-                        Text("Trykprøver ApS")
-                    }
-                    HStack{
-                        Text("Dato:")
-                            .bold()
-                        Text("15/9-2014")
+                        Text("14/9-2018")
                     }
                     HStack{
                         Text("Status:")
@@ -142,19 +80,81 @@ struct Review: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
-                        Text("Giant Cooperation A/S")
+                        Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
-                        Text("8/9-2012")
+                        Text("14/9-2018")
+                    }
+                    HStack{
+                        Text("Status:")
+                            .bold()
+                        Text("OK")
+                        Image(systemName: "hand.thumbsup.fill")
+                            .foregroundColor(.green)
+                    }
+                }
+                Spacer()
+            }
+            HStack{
+                Image(systemName: "text.badge.checkmark")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 60, alignment: .leading)
+                VStack(alignment: .leading){
+                    HStack{
+                        Text("Title:")
+                            .bold()
+                        Text("Pressure check")
+                    }
+                    HStack{
+                        Text("Responsible:")
+                            .bold()
+                        Text("B-Tech")
+                    }
+                    HStack{
+                        Text("Date:")
+                            .bold()
+                        Text("14/9-2018")
+                    }
+                    HStack{
+                        Text("Status:")
+                            .bold()
+                        Text("OK")
+                        Image(systemName: "hand.thumbsup.fill")
+                            .foregroundColor(.green)
+                    }
+                }
+                Spacer()
+            }
+            HStack{
+                Image(systemName: "text.badge.checkmark")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 40, height: 60, alignment: .leading)
+                VStack(alignment: .leading){
+                    HStack{
+                        Text("Title:")
+                            .bold()
+                        Text("Pressure check")
+                    }
+                    HStack{
+                        Text("Responsible:")
+                            .bold()
+                        Text("B-Tech")
+                    }
+                    HStack{
+                        Text("Date:")
+                            .bold()
+                        Text("14/9-2018")
                     }
                     HStack{
                         Text("Status:")

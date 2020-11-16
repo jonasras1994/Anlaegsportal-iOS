@@ -18,17 +18,17 @@ struct Documents: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("11/9-2020")
                     }
@@ -42,17 +42,17 @@ struct Documents: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("14/9-2018")
                     }
@@ -66,17 +66,17 @@ struct Documents: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("Carsten Aps")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("3/9-2016")
                     }
@@ -90,17 +90,17 @@ struct Documents: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("Trykprøver ApS")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("15/9-2014")
                     }
@@ -114,17 +114,17 @@ struct Documents: View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Titel:")
+                        Text("Title:")
                             .bold()
-                        Text("Test af tryk")
+                        Text("Pressure Check")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("Giant Cooperation A/S")
                     }
                     HStack{
-                        Text("Dato:")
+                        Text("Date:")
                             .bold()
                         Text("8/9-2012")
                     }

@@ -20,11 +20,11 @@ struct AddressResultsView: View {
                 
                 if (self.address == "")
                 {
-                    Text("Adresse: \nPenselstrøget 30, 4000 Roskilde")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(.white)
+                    Text("Address: \nPenselstrøget 30, 4000 Roskilde")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(.white)
                         .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .leading)
                 }
                 else{
-                    Text("Adresse: \n\(address)")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(Color.white)
+                    Text("Address: \n\(address)")   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)  .foregroundColor(Color.white)
                         .frame(minWidth: 300, idealWidth: 400, maxWidth: 300, minHeight: 100, idealHeight: 100, maxHeight: 100, alignment: .leading)
                 }
             }

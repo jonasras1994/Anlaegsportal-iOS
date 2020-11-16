@@ -32,17 +32,17 @@ struct SlidingTabMenuView : View {
                     .frame(width: 40, height: 60, alignment: .leading)
                 VStack(alignment: .leading){
                     HStack{
-                        Text("Navn:")
+                        Text("Name:")
                             .bold()
                         Text("Carbondive 300")
                     }
                     HStack{
-                        Text("Ansvarlig:")
+                        Text("Responsible:")
                             .bold()
                         Text("B-Tech")
                     }
                     HStack{
-                        Text("Dato for næste syn:")
+                        Text("Due date for next review:")
                             .bold()
                         Text("11/9-2020")
                         
@@ -62,7 +62,7 @@ struct SlidingTabMenuView : View {
             
             VStack(alignment: .leading) {
                 SlidingTabView(selection: self.$selectedTabIndex,
-                               tabs: ["Info", "Eftersyn", "Dokumenter"],
+                               tabs: ["Info", "Review", "Documents"],
                                font: .body,
                                activeAccentColor: Color.blue,
                                selectionBarColor: Color.blue)

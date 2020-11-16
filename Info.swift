@@ -33,12 +33,15 @@ struct Info: View {
                         HStack{
                             
                             HStack{
-                                Text("Navn: \nProdukt type: \nProdukt mærke: \nPris: \nUdløb af garanti: \nAnsvarlig: \nKommentarer: \nRegistreringsdato: \nInstallationsdato: \nSidste eftersyn: \nEftersynsfrekvens: \nCheckliste: \nAdresse: \nQR-ID:")
+                                Text("Name: \nProduct type: \nProduct brand: \nPrice: \nWarranty ending: \nResponsible: \nComments: \nRegistrationdate: \nInstallationdate: \nLast review: \nReview frequency: \nChecklist: \nAddress: \nQR-ID:")
                                     .font(.headline)
+                                    .lineSpacing(17.0)
+
                                 Text(installation.myconcatenate())
+                                    .lineSpacing(15.0)
+
 
                             }
-                            .lineSpacing(10.0)
 
                             
                         }
